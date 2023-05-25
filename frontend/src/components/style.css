@@ -1,0 +1,126 @@
+.main {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 90px 0px 90px 0;
+  background-color: rgb(252, 252, 252);
+}
+
+.sub-main {
+  display: flex;
+  justify-content: center;
+  height: 550px;
+  width: 35%;
+  filter: drop-shadow(0 0 1.75rem crimson);
+  padding-top: 30px;
+  border-radius: 60px;
+  background-color: white;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 25px 0px #888;
+}
+
+.imgs {
+  padding-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.container-image {
+  background-color: rgb(223, 221, 221);
+  border-radius: 150px;
+  align-items: center;
+  display: flex;
+  height: 115px;
+  width: 115px;
+}
+
+.profile {
+  height: 130px;
+  width: 130px;
+  border-radius: 130px;
+}
+
+.LHeader {
+  text-align: center;
+}
+
+.email {
+  height: 25px;
+  width: 35px;
+  position: absolute;
+  padding: 15px 0 0 15px;
+  border: none;
+  outline: none;
+}
+
+.fill {
+  padding-left: 70px;
+  font-size: 20px;
+}
+
+.second-input {
+  padding-top: 20px;
+}
+
+button {
+  width: 260px;
+  height: 50px;
+  border-radius: 60px;
+  background-color: rgb(241, 72, 6);
+  color: white;
+  box-shadow: inset 0px 0px 25px 0px rgb(14, 14, 15);
+  font-size: 25px;
+  border: none;
+}
+
+.login-btn {
+  padding-top: 20px;
+}
+
+.reg-link {
+  padding-top: 10px;
+}
+
+.mail-id {
+  padding-top: 20px;
+}
+
+.inline-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sub-main {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sub-main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  input {
+    width: 70%;
+  }
+  
+  .sub-main {
+    padding-top: 15px;
+  }
+  
+  .second-input {
+    padding-top: 15px;
+  }
+  
+  button {
+    width: 90%;
+  }
+}
