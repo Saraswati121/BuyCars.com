@@ -83,7 +83,7 @@ export const Login = () => {
                                 />
                             </div>
                             <div className='login-btn'>
-                                    <button type="submit">Login</button>
+                                    <button type="submit" className='btn'>Login</button>
                             </div>
                             <div className='reg-link'>
                                 <Link className='link' to='/' style={{textDecoration:"none"}}>

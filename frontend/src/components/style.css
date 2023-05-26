@@ -17,13 +17,6 @@
   background-color: white;
 }
 
-input {
-  width: 300px;
-  height: 50px;
-  border-radius: 60px;
-  box-shadow: inset 0px 0px 25px 0px #888;
-}
-
 .imgs {
   padding-top: 20px;
   justify-content: center;
@@ -61,13 +54,17 @@ input {
 .fill {
   padding-left: 70px;
   font-size: 20px;
+  width: 300px;
+  height: 50px;
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 25px 0px #888;
 }
 
 .second-input {
   padding-top: 20px;
 }
 
-button {
+.btn {
   width: 260px;
   height: 50px;
   border-radius: 60px;
@@ -94,7 +91,35 @@ button {
   display: inline-flex;
   align-items: center;
 }
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+.details{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
 @media screen and (max-width: 768px) {
   .sub-main {
     width: 70%;
@@ -123,4 +148,33 @@ button {
   button {
     width: 90%;
   }
+}
+.card-actions{
+  border: 1px solid #490909;
+  margin: auto;
+  padding: 7px 35px;
+  background-color: aqua;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+}
+form{
+  font-size: 25px;
+  width: 30%;
+  margin: auto;
+  filter: drop-shadow(0 0 1.75rem crimson);
+  border-radius: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+}
+.inp{
+  margin-left: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-right: 50px;
+}
+.car-details-container{
+width: 90%;
+margin: auto;
 }

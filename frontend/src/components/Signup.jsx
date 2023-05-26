@@ -87,7 +87,7 @@ export const Signup = () => {
                                 />
                             </div>
                             <div className='login-btn'>
-                                <button type="submit">Register</button>
+                                <button type="submit" className='btn'>Register</button>
                             </div>
                             <div className='reg-link'>
                                 <Link className='link' to='/login' style={{textDecoration:"none"}}>
