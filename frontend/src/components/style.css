@@ -119,35 +119,7 @@ li {
 .details{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-}
-@media screen and (max-width: 768px) {
-  .sub-main {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .sub-main {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  input {
-    width: 70%;
-  }
-  
-  .sub-main {
-    padding-top: 15px;
-  }
-  
-  .second-input {
-    padding-top: 15px;
-  }
-  
-  button {
-    width: 90%;
-  }
+  margin-top: 80px;
 }
 .card-actions{
   border: 1px solid #490909;
@@ -160,13 +132,17 @@ li {
 }
 form{
   font-size: 25px;
-  width: 30%;
   margin: auto;
   filter: drop-shadow(0 0 1.75rem crimson);
   border-radius: 60px;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: white;
+}
+.frm{
+  width: 30%;
+  margin: auto;
+  margin-top: 90px;
 }
 .inp{
   margin-left: 5px;
@@ -175,6 +151,54 @@ form{
   padding-right: 50px;
 }
 .car-details-container{
-width: 90%;
+width: 100%;
 margin: auto;
+}
+.btnlogout {
+  background-color: #ecb2cf;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 12px 30px;
+  padding: 12px;
+  cursor: pointer;
+}
+.btnlogout:hover{
+  width: 120px;
+  background-color: rgb(149, 235, 118);
+}
+#navbar{
+  width: 100%;
+  display: flex;
+  background-color: #b682df;
+  justify-content: space-between;
+  color: rgb(220, 217, 234);
+  font-size: 22px;
+  /* filter: drop-shadow(30px 10px 4px #4444dd); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.love{
+  display: flex;
+}
+.love>img{
+  margin: 8px 8px 0px 0px;
+  margin-left: 20px;
+}
+.love>a{
+  margin-left: 20px;
+  text-decoration: none;
+  margin-top: 19px;
+  color: white;
+}
+.funly{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: blue;
+}
+#rgn{
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
 }

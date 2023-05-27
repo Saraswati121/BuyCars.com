@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Navbar} from './Navbar'
 import axios from 'axios';
 
 export const Home = () => {
@@ -58,8 +59,10 @@ export const Home = () => {
   };
   return (
     <div>
-        <h1>Create Car</h1>
+        
       {errorMessage && <p>{errorMessage}</p>}
+      <Navbar/>
+      <div className='frm'>
       <form onSubmit={handleSubmit}>
         <label>
           <b>Title :</b>
@@ -107,7 +110,8 @@ export const Home = () => {
        </label>
         <br /><br />
 <button type="submit" className="card-actions">Create Car</button>
-</form>
+      </form>
+      </div>
     </div>
   )
 }
