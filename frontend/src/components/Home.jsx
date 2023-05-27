@@ -41,7 +41,7 @@ export const Home = () => {
       formData.append('mileage', mileage);
       formData.append('image', image);
 
-      await axios.post('http://localhost:8080/createcars', formData);
+      await axios.post('https://buycars.onrender.com/createcars', formData);
       setTitle('');
       setBulletPoints([]);
       setPrice('');

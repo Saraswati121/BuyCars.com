@@ -46,9 +46,9 @@ export const Signup = () => {
           return;
         }
         try {
-          let url = "http://localhost:8080/auth/signup";
+          let url = "https://buycars.onrender.com/auth/signup";
           const { data } = await axios.post(url, formData);
-          //console.log(data);
+          console.log(data);
           nav("/login");
         } catch (err) {
           console.log(err);

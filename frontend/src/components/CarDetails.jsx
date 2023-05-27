@@ -23,7 +23,7 @@ export const CarDetails = () => {
 
   const fetchCarDetails = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/viewcars');
+      const response = await axios.get('https://buycars.onrender.com/viewcars');
       const carDetails = response.data.carDetails.map((car) => ({
         ...car,
         bulletPoints: JSON.parse(car.bulletPoints),
@@ -35,7 +35,7 @@ export const CarDetails = () => {
   };
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/deletecars/${id}`);
+      await axios.delete(`https://buycars.onrender.com/deletecars/${id}`);
       fetchCarDetails();
     } catch (error) {
       console.error(error);
@@ -53,7 +53,7 @@ export const CarDetails = () => {
   
   const handleEdit = async (id) => {
     try {
-      await axios.patch(`http://localhost:8080/updatecars/${id}`,editValues[id]);
+      await axios.patch(`https://buycars.onrender.com/updatecars/${id}`,editValues[id]);
       fetchCarDetails();
     } catch (error) {
       console.error(error);
@@ -113,7 +113,7 @@ export const CarDetails = () => {
             {car.image && (
               <CardMedia
                 sx={{ height: 200 }}
-                image={`http://localhost:8080/uploads/${car.image}`}
+                image={`https://buycars.onrender.com/uploads/${car.image}`}
                 title={car.title}
               />
             )}

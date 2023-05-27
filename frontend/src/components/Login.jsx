@@ -41,7 +41,7 @@ export const Login = () => {
         return;
       }
       try {
-        const url = 'http://localhost:8080/auth/login';
+        const url = 'https://buycars.onrender.com/auth/login';
         const { data } = await axios.post(url, fdata);
         console.log(data);
         localStorage.setItem('token', data.token);
